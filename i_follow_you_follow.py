@@ -10,7 +10,7 @@ def sleep_for_period_of_time():
     time.sleep(limit)
 
 def main():
-    driver = webdriver.Chrome(executable_path=ChromeDriverManager.install())
+    driver = webdriver.Chrome(executable_path=ChromeDriverManager().install())
     driver.get("https://www.instagram.com")
     print('stop')
 
@@ -29,4 +29,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
